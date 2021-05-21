@@ -4,6 +4,7 @@ Operation = Install
 Operation = Upgrade
 Target = plasma-workspace
 Target = plasmashell-fix
+Target = plasmashell-fix-git
 
 [Action]
 Description = Automatic re-open plasmashell
