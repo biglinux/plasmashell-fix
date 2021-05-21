@@ -13,7 +13,6 @@ md5sums=(SKIP)
 
 package() {
     cp -r "${srcdir}/plasmashell-fix/plasmashell-fix/usr/" "${pkgdir}/"
-    cp -r "${srcdir}/plasmashell-fix/plasmashell-fix/etc/" "${pkgdir}/"
 }
 
 
