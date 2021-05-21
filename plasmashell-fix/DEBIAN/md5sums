@@ -1,0 +1,7 @@
+6ed1d30972b1bfcf1eda507467e09290  DEBIAN/dpkg-divert
+32552e86e7053b5fda73c2bfaa64ceb0  DEBIAN/preinst
+a6c7d5a2280dc13ce3b90245e2778dbc  DEBIAN/postrm
+d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+2668a14cc18ad4cd395488e91b7e7a55  DEBIAN/control
+5ef5bc73b5afe1f5163a19bb80404d89  etc/xdg/autostart/org.kde.plasmashell.desktop
+df3fb56744c0e49fc639958dc2ede8f6  usr/bin/plasmashell-fix

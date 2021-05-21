@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=plasmashell-fix
+mkdir -p "/usr/share/dpkgdivert/plasmashell-fix"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/plasmashell-fix/etcxdgautostartorg.kde.plasmashell.desktop" --rename "/etc/xdg/autostart/org.kde.plasmashell.desktop"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/etc/xdg/autostart/org.kde.plasmashell.desktop")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/plasmashell-fix/etcxdgautostartorg.kde.plasmashell.desktop" --rename "/etc/xdg/autostart/org.kde.plasmashell.desktop"
+fi
+;;
+esac
+exit 0

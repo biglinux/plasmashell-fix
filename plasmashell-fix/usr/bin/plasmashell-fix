@@ -1,0 +1,18 @@
+#!/bin/sh
+
+while :; do
+
+    if [ "$(qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.isShuttingDown)" = "false" ]; then
+  
+        if [ "$(cat "$HOME/.big_performance")" != "0" ] && [ "$(cat "$HOME/.big_performance")" != "" ]; then
+            QT_QUICK_BACKEND=software QSG_RENDER_LOOP=basic plasmashell ${1+"$@"}
+        else
+            QT_QUICK_BACKEND="" QSG_RENDER_LOOP="" plasmashell ${1+"$@"}
+        fi
+
+    else
+        exit
+    fi
+
+
+done

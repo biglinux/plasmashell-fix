@@ -1,0 +1,10 @@
+Package: plasmashell-fix
+Version: 1.0.1-1big2
+Depends: plasma-workspace
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+Installed-Size:28
+Description: If your plasma is killed, that script ressurrect
+

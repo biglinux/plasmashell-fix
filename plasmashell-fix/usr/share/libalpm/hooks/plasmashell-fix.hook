@@ -1,0 +1,11 @@
+[Trigger]
+Type = Package
+Operation = Install
+Operation = Upgrade
+Target = plasma-workspace
+Target = plasmashell-fix
+
+[Action]
+Description = Automatic re-open plasmashell
+When = PostTransaction
+Exec = /usr/share/libalpm/scripts/plasmashell-fix

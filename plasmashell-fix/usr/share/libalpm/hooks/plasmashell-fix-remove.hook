@@ -1,0 +1,9 @@
+[Trigger]
+Type = Package
+Operation = Remove
+Target = plasmashell-fix
+
+[Action]
+Description = Automatic re-open plasmashell
+When = PreTransaction
+Exec = /usr/share/libalpm/scripts/plasmashell-fix-remove
