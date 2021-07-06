@@ -1,5 +1,5 @@
 #!/bin/sh
 
-sed -i 's|/usr/bin/plasmashell|/usr/bin/plasmashell-fix|g' /etc/xdg/autostart/org.kde.plasmashell.desktop
+sed -i 's|/usr/bin/plasmashell$|/usr/bin/plasmashell-fix|g' /etc/xdg/autostart/org.kde.plasmashell.desktop
 
-sed -i 's|/usr/bin/plasmashell|/usr/bin/plasmashell-fix|g' /usr/lib/systemd/user/plasma-plasmashell.service
+sed -i 's|/usr/bin/plasmashell$|/usr/bin/plasmashell-fix|g' /usr/lib/systemd/user/plasma-plasmashell.service
