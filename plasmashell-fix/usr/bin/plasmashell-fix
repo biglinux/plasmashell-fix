@@ -1,5 +1,10 @@
 #!/bin/sh
 
+if [ -e "/tmp/big_language" ]; then
+    export LANG=$(cat /tmp/big_language)
+fi
+
+
 if [ "$(cat "$HOME/.big_performance")" != "0" ] && [ "$(cat "$HOME/.big_performance")" != "" ]; then
     QT_QUICK_BACKEND=software QSG_RENDER_LOOP=basic plasmashell
 else
