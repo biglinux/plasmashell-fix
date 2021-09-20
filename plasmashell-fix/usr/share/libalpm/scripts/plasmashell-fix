@@ -3,3 +3,16 @@
 sed -i 's|/usr/bin/plasmashell$|/usr/bin/plasmashell-fix|g' /etc/xdg/autostart/org.kde.plasmashell.desktop
 
 sed -i 's|/usr/bin/plasmashell --no-respawn|/usr/bin/plasmashell-fix|g' /usr/lib/systemd/user/plasma-plasmashell.service
+
+sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.biglinux.appsmenu/contents/config/main.xml 2> /dev/null > /dev/null
+
+sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/config/main.xml 2> /dev/null > /dev/null
+
+sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.kde.plasma.kickersupersimple/contents/config/main.xml 2> /dev/null > /dev/null
+
+sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.kde.plasma.kickersimple/contents/config/main.xml 2> /dev/null > /dev/null
+
+sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.kde.plasma.kicker/contents/config/main.xml 2> /dev/null > /dev/null
+
+sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.kde.plasma.simplemenu/contents/config/main.xml 2> /dev/null > /dev/null
+
