@@ -1,0 +1,26 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the plasmashell-fix package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: plasmashell-fix\n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: attranslate\n"
+
+msgid "Alguns programas estão utilizando este dispositivo, deseja forçar a remoção?"
+msgstr "某些程序正在使用此设备，是否要强制删除？"
+
+msgid "Forçar a ejeção?"
+msgstr "强制弹射？"
+
+msgid "O dispositivo pode ser removido com segurança!"
+msgstr "该设备可以安全移除！"
