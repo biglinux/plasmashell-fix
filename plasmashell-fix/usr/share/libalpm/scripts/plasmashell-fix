@@ -1,10 +1,6 @@
 #!/bin/sh
 
-sed -i 's|/usr/bin/plasmashell-fix|/usr/bin/plasmashell|g' /etc/xdg/autostart/org.kde.plasmashell.desktop
-
 sed -i 's|After=plasma-ksmserver.service plasma-kcminit.service|After=plasma-ksmserver.service plasma-kcminit.service plasma-xdg-desktop-portal-kde.service|g' /usr/lib/systemd/user/plasma-plasmashell.service
-
-sed -i 's|/usr/bin/plasmashell-fix|/usr/bin/plasmashell --no-respawn|g' /usr/lib/systemd/user/plasma-plasmashell.service
 
 sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.biglinux.appsmenu/contents/config/main.xml 2> /dev/null > /dev/null
 

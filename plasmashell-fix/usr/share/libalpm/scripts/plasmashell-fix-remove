@@ -2,8 +2,6 @@
 
 sed -i 's|/usr/bin/plasmashell-fix|/usr/bin/plasmashell|g' /etc/xdg/autostart/org.kde.plasmashell.desktop
 
-sed -i 's|/usr/bin/plasmashell-fix|/usr/bin/plasmashell|g;s|Restart=.*|Restart=always|g' /usr/lib/systemd/user/plasma-plasmashell.service
-
 sed -i 's|big-logo|start-here-kde|g' /usr/share/plasma/plasmoids/org.biglinux.appsmenu/contents/config/main.xml 2> /dev/null > /dev/null
 
 sed -i 's|big-logo|start-here-kde|g' /usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/config/main.xml 2> /dev/null > /dev/null
