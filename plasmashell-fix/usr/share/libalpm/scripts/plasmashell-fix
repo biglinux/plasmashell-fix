@@ -2,6 +2,8 @@
 
 sed -i 's|After=plasma-ksmserver.service plasma-kcminit.service plasma-xdg-desktop-portal-kde.service|After=plasma-ksmserver.service plasma-kcminit.service|g' /usr/lib/systemd/user/plasma-plasmashell.service
 
+sed -i "s|ExecStart=/usr/bin/plasmashell.*|ExecStart=/bin/bash -c 'if ! qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.isShuttingDown \| grep -q 'true'; then /usr/bin/plasmashell --no-respawn; fi'|g" /usr/lib/systemd/user/plasma-plasmashell.service
+
 sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.biglinux.appsmenu/contents/config/main.xml 2> /dev/null > /dev/null
 
 sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/config/main.xml 2> /dev/null > /dev/null
