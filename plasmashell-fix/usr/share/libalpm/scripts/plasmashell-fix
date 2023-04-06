@@ -6,9 +6,6 @@ sed -i 's|After=plasma-ksmserver.service plasma-kcminit.service plasma-xdg-deskt
 # only restart plasmashell if user not change to logout
 sed -i "s|ExecStart=/usr/bin/plasmashell.*|ExecStart=/bin/bash -c 'if ! qdbus org.kde.ksmserver /KSMServer org.kde.KSMServerInterface.isShuttingDown \| grep -q 'true'; then /usr/bin/plasmashell --no-respawn; fi'|g" /usr/lib/systemd/user/plasma-plasmashell.service
 
-# stop all processes when logout
-sed -i 's/^#*UserStopDelaySec\s*=.*/UserStopDelaySec=0/' /etc/systemd/logind.conf
-
 sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.biglinux.appsmenu/contents/config/main.xml 2> /dev/null > /dev/null
 
 sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.kde.plasma.kickoff/contents/config/main.xml 2> /dev/null > /dev/null
