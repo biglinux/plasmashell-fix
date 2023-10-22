@@ -7,7 +7,8 @@ arch=('any')
 license=('GPL')
 url="https://github.com/biglinux/plasmashell-fix"
 pkgdesc="Automatic re-open plasmashell if thats crash"
-depends=('plasma-workspace')
+depends=('plasma-workspace' 'frameworkintegration5' 'kwayland5' 'knewstuff5' 'plasma-framework5' 'kcontacts5' 'kpeople5')
+provides=('frameworkintegration' 'kwayland' 'knewstuff' 'plasma-framework' 'kcontacts' 'kpeople')
 source=("git+https://github.com/biglinux/plasmashell-fix.git")
 md5sums=(SKIP)
 
