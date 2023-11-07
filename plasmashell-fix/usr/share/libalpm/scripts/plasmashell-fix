@@ -18,3 +18,9 @@ sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.kde.plasma.
 
 sed -i 's|start-here-kde|big-logo|g' /usr/share/plasma/plasmoids/org.kde.plasma.simplemenu/contents/config/main.xml 2> /dev/null > /dev/null
 
+
+if ! grep -q 'After=.*kded.service' /usr/lib/systemd/user/plasma-kwin_x11.service; then
+    sed -i 's|After=plasma-kcminit.service|After=plasma-kcminit.service plasma-kded.service|g' /usr/lib/systemd/user/plasma-kwin_x11.service
+fi
+
+

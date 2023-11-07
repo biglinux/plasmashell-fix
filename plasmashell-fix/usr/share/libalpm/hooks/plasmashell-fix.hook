@@ -5,6 +5,7 @@ Operation = Upgrade
 Target = plasma-workspace
 Target = plasmashell-fix
 Target = plasmashell-fix-git
+Target = kwin
 
 [Action]
 Description = Automatic re-open plasmashell
