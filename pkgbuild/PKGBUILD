@@ -6,13 +6,13 @@ pkgrel=$(date +%H%M)
 arch=('any')
 license=('GPL')
 url="https://github.com/biglinux/plasmashell-fix"
-pkgdesc="Automatic re-open plasmashell if thats crash"
-depends=('plasma-workspace' 'frameworkintegration5' 'kwayland5' 'knewstuff5' 'plasma-framework5' 'kcontacts5' 'kpeople5' 'kxmlgui5' 'kservice5')
+pkgdesc="Obsolete package"
+#depends=('plasma-workspace' 'frameworkintegration5' 'kwayland5' 'knewstuff5' 'plasma-framework5' 'kcontacts5' 'kpeople5' 'kxmlgui5' 'kservice5')
 #provides=('frameworkintegration' 'kwayland' 'knewstuff' 'plasma-framework' 'kcontacts' 'kpeople' 'kxmlgui' 'kservice')
 source=("git+https://github.com/biglinux/plasmashell-fix.git")
 md5sums=(SKIP)
 
-package() {
-    cp -r "${srcdir}/plasmashell-fix/plasmashell-fix/usr/" "${pkgdir}/"
-}
+# package() {
+#     cp -r "${srcdir}/plasmashell-fix/plasmashell-fix/usr/" "${pkgdir}/"
+#}
 # 
